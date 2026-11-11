@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caffee TM..♡</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;scroll-behavior:smooth}
+  body{background:#fff5f8;color:#5a2a3a}
+  header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:15px 40px;box-shadow:0 2px 10px #ffd1dc;position:sticky;top:0;z-index:10}
+  .logo{font-size:26px;font-weight:800;color:#ff6b9d}
+  nav a{margin:0 12px;text-decoration:none;color:#5a2a3a;font-weight:600}
+  .btn{background:#ff6b9d;color:#fff;padding:10px 22px;border-radius:25px;text-decoration:none;border:none;cursor:pointer;font-weight:700;display:inline-block}
+  .btn-outline{background:#fff;color:#ff6b9d;border:2px solid #ff6b9d}
+
+  /* ===== HOME ===== */
+  .hero{background:#ffeef3;display:flex;align-items:center;justify-content:space-between;padding:60px 40px;gap:30px;flex-wrap:wrap}
+  .hero-text{flex:1;min-width:280px}
+  .badge{background:#ffd1dc;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700}
+  .hero h1{font-size:52px;line-height:1.1;margin:15px 0}
+  .hero h1 span{color:#ff6b9d}
+  .hero p{color:#8a5a6b;font-size:18px;margin-bottom:25px}
+  .hero img{width:430px;max-width:100%;border-radius:25px;box-shadow:0 10px 30px #ffc0d0}
+
+  .categories{padding:50px 40px;text-align:center}
+  .categories h2{font-size:32px}
+  .categories p.sub{color:#999;margin:8px 0 30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 5px 20px #ffe0e8;padding-bottom:20px;text-align:center}
+  .card img{width:100%;height:220px;object-fit:cover}
+  .card h3{margin:12px 0 5px;font-size:21px}
+  .card p{color:#999;font-size:14px;padding:0 15px;margin-bottom:12px}
+  .price{color:#ff6b9d;font-weight:800;font-size:20px;margin:10px 0}
+  .card button{background:#ff6b9d;color:#fff;border:none;padding:10px 20px;border-radius:20px;cursor:pointer;font-weight:700}
+
+  /* ===== MENU ===== */
+  .menu{padding:50px 40px;background:#fff}
+  .menu h2{text-align:center;font-size:34px}
+  .menu p.sub{text-align:center;color:#999;margin:8px 0 20px}
+  .tabs{text-align:center;margin-bottom:30px}
+  .tabs button{border:2px solid #ff6b9d;background:#fff;color:#ff6b9d;padding:8px 20px;border-radius:20px;margin:5px;cursor:pointer;font-weight:700}
+  .tabs button.active{background:#ff6b9d;color:#fff}
+  .section-title{font-size:24px;margin:30px 0 15px;color:#ff6b9d}
+
+  /* ===== CHECKOUT MINI ===== */
+  .checkout{background:#fff0f4;padding:35px;border-radius:25px;margin:40px}
+  .checkout h2{text-align:center;margin-bottom:15px}
+  .checkout input{width:100%;padding:13px;margin:8px 0;border:1px solid #ffd1dc;border-radius:12px;outline:none}
+  .total{display:flex;justify-content:space-between;font-weight:800;font-size:20px;margin:15px 0}
+  footer{text-align:center;padding:25px;background:#ff6b9d;color:#fff}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="logo">🌸 Caffee TM..♡</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#checkout">Order</a>
+  </nav>
+  <a href="#checkout" class="btn">Order Now</a>
+</header>
+
+<!-- ===== 1. الصفحة الرئيسية ===== -->
+<div class="hero" id="home">
+  <div class="hero-text">
+    <span class="badge">💗 Pink Cafe • Coffee • Cake • Ice Cream</span>
+    <h1>Welcome to<br><span>Caffe TM..♡</span></h1>
+    <p>Your sweet little pink cafe. Soft coffee, fresh cakes and pink ice cream, made with love.</p>
+    <a href="#menu" class="btn">View Menu</a>
+    <a href="#checkout" class="btn btn-outline" style="margin-left:10px">Order Now</a>
+  </div>
+  <img src="logo.jpg" alt="Pink Tm">
+</div>
+
+<div class="categories">
+  <h2>What We Love</h2>
+  <p class="sub">Choose your favourite - Coffee, Cakes or Ice Cream</p>
+  <div class="grid">
+    <div class="card">
+      <img src="latte.jpg">
+      <h3>☕ Coffee</h3>
+      <p>Pink Latte, Sakura Rose Coffee & more</p>
+      <a href="#menu" class="btn">See Coffee</a>
+    </div>
+    <div class="card">
+      <img src="strawberry-cake.jpg">
+      <h3>🍰 Cakes</h3>
+      <p>Strawberry, Vanilla & Chocolate Cakes</p>
+      <a href="#menu" class="btn">See Cakes</a>
+    </div>
+    <div class="card">
+      <img src="icecream.jpg">
+      <h3>🍦 Ice Cream</h3>
+      <p>Strawberry, Cherry & Rose Ice Cream</p>
+      <a href="#menu" class="btn">See Ice Cream</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 2. المنيو ===== -->
+<div class="menu" id="menu">
+  <h2>Our Pink Menu 💗</h2>
+  <p class="sub">Coffee • Cakes • Ice Cream - Click Add to add to cart</p>
+
+  <h3 class="section-title">☕ Pink Coffee</h3>
+  <div class="grid">
+    <div class="card">
+      <img src="latte.jpg">
+      <h3>Pink Latte</h3>
+      <p>Soft pink latte with rose milk</p>
+      <div class="price">$4.50</div>
+      <button onclick="addToCart('Pink Latte',4.50)">+ Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="sakura.jpg">
+      <h3>Sakura Rose Coffee</h3>
+      <p>Iced coffee with sakura & strawberry</p>
+      <div class="price">$5.50</div>
+      <button onclick="addToCart('Sakura Rose Coffee',5.50)">+ Add to Cart</button>
+    </div>
+  </div>
+
+  <h3 class="section-title">🍰 Cakes</h3>
+  <div class="grid">
+    <div class="card">
+      <img src="strawberry-cake.jpg">
+      <h3>Strawberry Cake</h3>
+      <p>Fresh strawberries & cream</p>
+      <div class="price">$6.50</div>
+      <button onclick="addToCart('Strawberry Cake',6.50)">+ Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="vanilla-cake.jpg">
+      <h3>Vanilla Bean Cake</h3>
+      <p>Classic vanilla with vanilla cream</p>
+      <div class="price">$5.50</div>
+      <button onclick="addToCart('Vanilla Bean Cake',5.50)">+ Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="chocolate-cake.jpg">
+      <h3>Chocolate Raspberry Cake</h3>
+      <p>Chocolate & fresh raspberries</p>
+      <div class="price">$6.00</div>
+      <button onclick="addToCart('Chocolate Raspberry Cake',6.00)">+ Add to Cart</button>
+    </div>
+  </div>
+
+  <h3 class="section-title">🍦 Ice Cream</h3>
+  <div class="grid">
+    <div class="card">
+      <img src="icecream.jpg">
+      <h3>Strawberry Ice Cream</h3>
+      <p>Pink ice cream with sprinkles</p>
+      <div class="price">$3.50</div>
+      <button onclick="addToCart('Strawberry Ice Cream',3.50)">+ Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 3. سلة صغيرة - عشان المنيو تشتغل ===== -->
+<div class="checkout" id="checkout">
+  <h2>💗 Your Order</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="text" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <div id="cart">Your cart is empty - choose from menu 💗</div>
+  <div class="total"><span>Total:</span><span id="total">$0.00</span></div>
+  <button class="btn" style="width:100%;padding:15px;font-size:18px" onclick="alert('Thank you! Your order is on the way 💗')">Place Order</button>
+</div>
+
+<footer>© 2026 Caffee TM..^-^♡ - Made with 💗</footer>
+
+<script>
+let total = 0;
+function addToCart(name, price){
+  document.getElementById('cart').innerHTML += '<p>• ' + name + ' - $' + price.toFixed(2) + '</p>';
+  total += price;
+  document.getElementById('total').innerText = '$' + total.toFixed(2);
+  alert(name + ' added to cart 💗');
+}
+</script>
+
+</body>
+</html>
